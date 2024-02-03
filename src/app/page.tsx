@@ -6,10 +6,10 @@ const postUrl = `https://kmac1.vercel.app/api/echo`;
 export async function generateMetadata(): Promise<Metadata> {
   const imageUrl = `https://kmac1.vercel.app/api/images/start?date=${Date.now()}`;
   return {
-    title: "Echo the Dolphin",
-    description: "Type something and Echo will say it back!",
+    title: "Farmacy",
+    description: "What's your fav strain?",
     openGraph: {
-      title: "Echo the Dolphin",
+      title: "Farmacy",
       images: [imageUrl],
     },
     other: {

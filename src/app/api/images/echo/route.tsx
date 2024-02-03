@@ -32,7 +32,7 @@ export async function GET(req: NextRequest) {
             objectFit: "cover", // Cover the area without losing aspect ratio
             width: "35%", // Image takes up 40% of the container's width
           }}
-          src="https://imagedelivery.net/BXluQx4ige9GuW0Ia56BHw/2639523a-690b-47af-16ab-ca07697fd000/original"
+          src="https://banny.eth.limo/2371D26A-D84C-41CE-86C7-66B56E9E8A57/JOINT-LIT.gif"
         />
         <div
           style={{
