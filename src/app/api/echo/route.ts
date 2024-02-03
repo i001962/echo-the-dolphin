@@ -4,8 +4,8 @@ import { getSSLHubRpcClient, Message } from "@farcaster/hub-nodejs";
 const HUB_URL = process.env["HUB_URL"] || "nemes.farcaster.xyz:2283";
 const hubClient = getSSLHubRpcClient(HUB_URL);
 
-const postUrl = `${process.env["HOST"]}/api/code`;
-
+// const postUrl = `${process.env["HOST"]}/api/code`;
+const postUrl = "https://kmac1.vercel.app/api/code";
 export async function POST(req: NextRequest) {
   const {
     untrustedData: { inputText },
@@ -18,12 +18,12 @@ export async function POST(req: NextRequest) {
 
     let urlBuffer = validMessage?.data?.frameActionBody?.url ?? [];
     const urlString = Buffer.from(urlBuffer).toString("utf-8");
-    if (!urlString.startsWith(process.env["HOST"] ?? "")) {
+    if (!urlString.startsWith('https://kmac1.vercel.app' ?? "")) {
       return new NextResponse("Bad Request", { status: 400 });
     }
 
     const message = inputText ?? "";
-    const imageUrl = `${process.env["HOST"]}/api/images/echo?date=${Date.now()}&message=${message}`;
+    const imageUrl = `https://kmac1.vercel.app/api/images/echo?date=${Date.now()}&message=${message}`;
     return new NextResponse(
       `<!DOCTYPE html>
       <html>
