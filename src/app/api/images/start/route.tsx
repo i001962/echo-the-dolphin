@@ -28,7 +28,7 @@ export async function GET() {
             objectFit: "cover", // Cover the area without losing aspect ratio
             width: "35%", // Image takes up 40% of the container's width
           }}
-          src="https://banny.eth.limo/2371D26A-D84C-41CE-86C7-66B56E9E8A57/JOINT-LIT.gif"
+          src="https://imagedelivery.net/BXluQx4ige9GuW0Ia56BHw/2639523a-690b-47af-16ab-ca07697fd000/original"
         />
         <div
           style={{
@@ -53,7 +53,7 @@ export async function GET() {
               display: "flex"
             }}
           >
-            <strong>Farmacy</strong>
+            <strong>Echo The Dolphin</strong>
           </div>
           <div
             style={{
@@ -61,7 +61,7 @@ export async function GET() {
               overflow: "hidden",
             }}
           >
-            Whats your fav strain?
+            Type something in the text input below and Echo will say it back.
           </div>
         </div>
       </div>

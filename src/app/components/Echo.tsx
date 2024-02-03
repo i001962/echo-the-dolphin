@@ -4,10 +4,10 @@ export default function Echo() {
          <img
           width="400"
           className="margin-auto"
-          src="https://banny.eth.limo/2371D26A-D84C-41CE-86C7-66B56E9E8A57/JOINT-LIT.gif"
+          src="https://imagedelivery.net/BXluQx4ige9GuW0Ia56BHw/2639523a-690b-47af-16ab-ca07697fd000/original"
         />
-      <h1 className="text-8xl font-bold">Farmacy</h1>
-      <a className="text-4xl text-sky-500 underline" href="https://github.com/i001962/farmacy" target="_blank">See the code on Github</a>
+      <h1 className="text-8xl font-bold">Echo the Dolphin</h1>
+      <a className="text-4xl text-sky-500 underline" href="https://github.com/horsefacts/echo-the-dolphin" target="_blank">See the code on Github</a>
     </div>
   );
 }

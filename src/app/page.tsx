@@ -1,15 +1,15 @@
 import { Metadata } from "next";
 import Echo from "@/app/components/Echo";
 
-const postUrl = `https://kmac1.vercel.app/api/echo`;
+const postUrl = `${process.env["HOST"]}/api/echo`;
 
 export async function generateMetadata(): Promise<Metadata> {
-  const imageUrl = `https://kmac1.vercel.app/api/images/start?date=${Date.now()}`;
+  const imageUrl = `${process.env["HOST"]}/api/images/start?date=${Date.now()}`;
   return {
-    title: "Farmacy",
-    description: "What's your fav strain?",
+    title: "Echo the Dolphin",
+    description: "Type something and Echo will say it back!",
     openGraph: {
-      title: "Farmacy",
+      title: "Echo the Dolphin",
       images: [imageUrl],
     },
     other: {
